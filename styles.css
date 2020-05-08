@@ -11,3 +11,7 @@ html {
   background-size: cover;
   */
 }
+
+.fill-remaining-space {
+  flex: auto;
+}
