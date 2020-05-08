@@ -1,6 +1,4 @@
-# yonagi.com
-A personal project showcasing my journey in design, development, and branding.
-
+# Yonagi.com
 <b>Hosting:</b> S3
 
 <b>Content Delivery:</b> Cloudflare
