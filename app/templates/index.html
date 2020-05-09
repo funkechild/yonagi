@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles.css">
 	<title>Welcome!</title>
 </head>
 <body>
@@ -20,17 +20,17 @@
 	<!-- TRADITIONAL NAVIGATION BAR -->
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index.html">Yonagi</a>
+		<a class="navbar-brand" href="{{ url_for('main.index') }}">Yonagi</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 		  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 		    <li class="nav-item active">
-		      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-link" href="{{ url_for('main.index') }}">Home <span class="sr-only">(current)</span></a>
 		    </li>
 		    <li class="nav-item">
-		      <a class="nav-link" href="bootstrap-playground.html">Bootstrap Playground</a>
+		      <a class="nav-link" href="{{ url_for('main.bootstrap_playground') }}">Bootstrap Playground</a>
 		    </li>
 		    <li class="nav-item">
 		      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Branding (Coming Soon)</a>
@@ -45,7 +45,7 @@
 		<!-- BREADCRUMB NAVIGATION -->
 		<nav aria-label="breadcrumb">
 		  <ol class="breadcrumb">
-		    <li class="breadcrumb-item"><a href="index.html">Yonagi.com</a></li>
+		    <li class="breadcrumb-item"><a href="{{ url_for('main.index') }}">Yonagi.com</a></li>
 		    <li class="breadcrumb-item active" aria-current="page">index.html</li>
 		</ol>
 		</nav>
