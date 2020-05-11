@@ -9,17 +9,10 @@
 	<title>Welcome!</title>
 </head>
 <body>
-	<!-- BOOTSTRAP WARNING BANNER -->
-	<div class="alert alert-warning" role="alert">
-  		<strong>Yonagi.com</strong> is under construction—check back frequently for updates.
-  		<!-- BUTTON TO CLOSE BANNER -->
-  		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
- 			<span aria-hidden="true">&times;</span>
-  		</button>
-	</div>
 	<!-- TRADITIONAL NAVIGATION BAR -->
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
 		<a class="navbar-brand" href="{{ url_for('main.index') }}">Yonagi</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
@@ -41,14 +34,14 @@
 		    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
 		  </form>
 		</div>
+		</div>
 		</nav>
-		<!-- BREADCRUMB NAVIGATION -->
-		<nav aria-label="breadcrumb">
-		  <ol class="breadcrumb">
-		    <li class="breadcrumb-item"><a href="{{ url_for('main.index') }}">Yonagi.com</a></li>
-		    <li class="breadcrumb-item active" aria-current="page">index.html</li>
-		</ol>
-		</nav>
+	</div>
+	<!-- BOOTSTRAP WARNING BANNER -->
+	<div class="alert alert-warning" role="alert">
+		<div class="container">
+  			<strong>Yonagi.com</strong> is under construction—check back frequently for updates.
+  		</div>
 	</div>
 	<!-- SITE CONTENT WRAPPER -->
 	<div class="container">
